@@ -38,7 +38,7 @@ const App = () => {
 
   useEffect(() => {
     // Change color after every 2 full cycles (or any other number you prefer)
-    if (waveCycles >= 6) {
+    if (waveCycles >= 3) {
       setColorIndex((prevIndex) => (prevIndex + 1) % colors.length); // Cycle colors
       setWaveCycles(0); // Reset cycle count
     }
